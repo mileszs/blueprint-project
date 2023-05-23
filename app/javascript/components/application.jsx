@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 
-const App = () => {
-  return (<div>Hello, Rails 7!</div>);
-};
+import { App } from './App';
 
 document.addEventListener('DOMContentLoaded', () => {
   const rootEl = document.getElementById('root');
