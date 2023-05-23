@@ -5,34 +5,6 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@createform/object-utils@npm:3.5.0":
-  version: 3.5.0
-  resolution: "@createform/object-utils@npm:3.5.0"
-  checksum: a63cf2a9525965dd31b77b416126a801f50e069de5276a2b91a1e8be93da7e3d4dddd3cb014999f27beb6100a51c75e39cc4f20bd468dfa80a255eed180a71b4
-  languageName: node
-  linkType: hard
-
-"@createform/react@npm:^3.5.0":
-  version: 3.5.0
-  resolution: "@createform/react@npm:3.5.0"
-  dependencies:
-    "@createform/object-utils": 3.5.0
-    "@createform/validation": 3.5.0
-  peerDependencies:
-    react: ">=18.0.0"
-  checksum: 5284414444d9919a787852114088de235ff1851a260b03e8e693229980152317121b91740515dc22db54c11d5be984cd70db4cc2c6e21d0c1b5709db277a4caa
-  languageName: node
-  linkType: hard
-
-"@createform/validation@npm:3.5.0":
-  version: 3.5.0
-  resolution: "@createform/validation@npm:3.5.0"
-  dependencies:
-    "@createform/object-utils": 3.5.0
-  checksum: d1101e2dfff78cabd0698ca34fef46368c160dcf84c45a61e000625771bab6b011c0dedd30f30328160d2c8417fb1faec137850439bd16cd0958d080a9885f66
-  languageName: node
-  linkType: hard
-
 "@esbuild/android-arm64@npm:0.17.19":
   version: 0.17.19
   resolution: "@esbuild/android-arm64@npm:0.17.19"
@@ -187,34 +159,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/stimulus@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "@hotwired/stimulus@npm:3.2.1"
-  checksum: 2617b10fb3ca0fb05205526693cbc9ea17fca84f40d8d95d0ce8d58f903aa74e020da858adc72f056f777f4854bdd7f5ee6d69810ecb17412af43d6ffb78997e
-  languageName: node
-  linkType: hard
-
-"@hotwired/turbo-rails@npm:^7.3.0":
-  version: 7.3.0
-  resolution: "@hotwired/turbo-rails@npm:7.3.0"
-  dependencies:
-    "@hotwired/turbo": ^7.3.0
-    "@rails/actioncable": ^7.0
-  checksum: 14e29fc7abcf966b652aaa5494398bd4a18559843d57fd5f6db785b3e1d2541c09fcbb979ccbf1dd8ab50d362558ac6bf52a97ce5dc2bbf503059793058b9e97
-  languageName: node
-  linkType: hard
-
-"@hotwired/turbo@npm:^7.3.0":
-  version: 7.3.0
-  resolution: "@hotwired/turbo@npm:7.3.0"
-  checksum: ccc03c980e4b4636e48ea2132c7d28be1be4f4e6123f63905fbf871e7647369b5c6ce53301443b218d7abf68fa4897eaf614254688108ed6ae303c5040241a97
-  languageName: node
-  linkType: hard
-
-"@rails/actioncable@npm:^7.0":
-  version: 7.0.4
-  resolution: "@rails/actioncable@npm:7.0.4"
-  checksum: b31cae40511a3df4d3048779255219b92f7dd89514f3c9f2da2b219b9b0635261b17b05031c7070756d319bf9165d4d6c021a820b110d53a3e6c441a062accdd
+"@remix-run/router@npm:1.6.2":
+  version: 1.6.2
+  resolution: "@remix-run/router@npm:1.6.2"
+  checksum: 5969d313bff6ba5c75917910090cebafda84b9d3b4b453fae6b3d60fea9f938078578ffca769c532ab7ce252cd4a207b78d1024d7c727ab80dd572e62fd3b3f2
   languageName: node
   linkType: hard
 
@@ -222,13 +170,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:."
   dependencies:
-    "@createform/react": ^3.5.0
-    "@hotwired/stimulus": ^3.2.1
-    "@hotwired/turbo-rails": ^7.3.0
     esbuild: ^0.17.19
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-use-wizard: ^2.2.1
+    react-hook-form: ^7.43.9
+    react-router-dom: ^6.11.2
   languageName: unknown
   linkType: soft
 
@@ -339,13 +285,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-use-wizard@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "react-use-wizard@npm:2.2.1"
+"react-hook-form@npm:^7.43.9":
+  version: 7.43.9
+  resolution: "react-hook-form@npm:7.43.9"
   peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 0d6a5c58b5b4f1e7447cf8d3146e896cb7b2872da7f9c27ed2dd3a204d9563b7950aad7928f791d8c9709c7f729245220099335937fcb64fe4ed5aa751a19400
+    react: ^16.8.0 || ^17 || ^18
+  checksum: 65b94de625f2b7921c4e856bf0abbe142bfe06c052217bd1bcc3a842e2cc37fa3a3e03758119dc038bbcf5edb49e02c29206528b80b201f9a4d601471ef78153
+  languageName: node
+  linkType: hard
+
+"react-router-dom@npm:^6.11.2":
+  version: 6.11.2
+  resolution: "react-router-dom@npm:6.11.2"
+  dependencies:
+    "@remix-run/router": 1.6.2
+    react-router: 6.11.2
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: ba44ff37f2956bc18991f2eedb32a3fa46d35832f61ded6c5d167e853ca289868fca6635467866280c73bc3da00dce8437dbbec57da100c0a3e3e3850af00b83
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.11.2":
+  version: 6.11.2
+  resolution: "react-router@npm:6.11.2"
+  dependencies:
+    "@remix-run/router": 1.6.2
+  peerDependencies:
+    react: ">=16.8"
+  checksum: e47f875dca70033a3b42704cb5ec076b60f9629a5cdc3be613707f3d5a5706123fb80301037455c285c6d5a1011b443e1784e0103969ebfac7071648d360c413
   languageName: node
   linkType: hard
 
