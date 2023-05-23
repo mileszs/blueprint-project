@@ -28,13 +28,58 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@createform/react", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:3.5.0"],\
             ["@hotwired/stimulus", "npm:3.2.1"],\
             ["@hotwired/turbo-rails", "npm:7.3.0"],\
             ["esbuild", "npm:0.17.19"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:18.2.0"]\
+            ["react-dom", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:18.2.0"],\
+            ["react-use-wizard", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:2.2.1"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@createform/object-utils", [\
+        ["npm:3.5.0", {\
+          "packageLocation": "./.yarn/cache/@createform-object-utils-npm-3.5.0-e2cae4a105-a63cf2a952.zip/node_modules/@createform/object-utils/",\
+          "packageDependencies": [\
+            ["@createform/object-utils", "npm:3.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@createform/react", [\
+        ["npm:3.5.0", {\
+          "packageLocation": "./.yarn/cache/@createform-react-npm-3.5.0-699c54814b-5284414444.zip/node_modules/@createform/react/",\
+          "packageDependencies": [\
+            ["@createform/react", "npm:3.5.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:3.5.0", {\
+          "packageLocation": "./.yarn/__virtual__/@createform-react-virtual-d46e88c226/0/cache/@createform-react-npm-3.5.0-699c54814b-5284414444.zip/node_modules/@createform/react/",\
+          "packageDependencies": [\
+            ["@createform/react", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:3.5.0"],\
+            ["@createform/object-utils", "npm:3.5.0"],\
+            ["@createform/validation", "npm:3.5.0"],\
+            ["@types/react", null],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@createform/validation", [\
+        ["npm:3.5.0", {\
+          "packageLocation": "./.yarn/cache/@createform-validation-npm-3.5.0-9788bbf3ba-d1101e2dff.zip/node_modules/@createform/validation/",\
+          "packageDependencies": [\
+            ["@createform/validation", "npm:3.5.0"],\
+            ["@createform/object-utils", "npm:3.5.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@esbuild/android-arm", [\
@@ -278,11 +323,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["app", "workspace:."],\
+            ["@createform/react", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:3.5.0"],\
             ["@hotwired/stimulus", "npm:3.2.1"],\
             ["@hotwired/turbo-rails", "npm:7.3.0"],\
             ["esbuild", "npm:0.17.19"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:18.2.0"]\
+            ["react-dom", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:18.2.0"],\
+            ["react-use-wizard", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:2.2.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -366,6 +413,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "packagePeers": [\
             "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-use-wizard", [\
+        ["npm:2.2.1", {\
+          "packageLocation": "./.yarn/cache/react-use-wizard-npm-2.2.1-ea2b7e8221-0d6a5c58b5.zip/node_modules/react-use-wizard/",\
+          "packageDependencies": [\
+            ["react-use-wizard", "npm:2.2.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:2.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-use-wizard-virtual-9ed52b7d48/0/cache/react-use-wizard-npm-2.2.1-ea2b7e8221-0d6a5c58b5.zip/node_modules/react-use-wizard/",\
+          "packageDependencies": [\
+            ["react-use-wizard", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:2.2.1"],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
             "react"\
           ],\
           "linkType": "HARD"\

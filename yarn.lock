@@ -5,6 +5,34 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@createform/object-utils@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@createform/object-utils@npm:3.5.0"
+  checksum: a63cf2a9525965dd31b77b416126a801f50e069de5276a2b91a1e8be93da7e3d4dddd3cb014999f27beb6100a51c75e39cc4f20bd468dfa80a255eed180a71b4
+  languageName: node
+  linkType: hard
+
+"@createform/react@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "@createform/react@npm:3.5.0"
+  dependencies:
+    "@createform/object-utils": 3.5.0
+    "@createform/validation": 3.5.0
+  peerDependencies:
+    react: ">=18.0.0"
+  checksum: 5284414444d9919a787852114088de235ff1851a260b03e8e693229980152317121b91740515dc22db54c11d5be984cd70db4cc2c6e21d0c1b5709db277a4caa
+  languageName: node
+  linkType: hard
+
+"@createform/validation@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@createform/validation@npm:3.5.0"
+  dependencies:
+    "@createform/object-utils": 3.5.0
+  checksum: d1101e2dfff78cabd0698ca34fef46368c160dcf84c45a61e000625771bab6b011c0dedd30f30328160d2c8417fb1faec137850439bd16cd0958d080a9885f66
+  languageName: node
+  linkType: hard
+
 "@esbuild/android-arm64@npm:0.17.19":
   version: 0.17.19
   resolution: "@esbuild/android-arm64@npm:0.17.19"
@@ -194,11 +222,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:."
   dependencies:
+    "@createform/react": ^3.5.0
     "@hotwired/stimulus": ^3.2.1
     "@hotwired/turbo-rails": ^7.3.0
     esbuild: ^0.17.19
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-use-wizard: ^2.2.1
   languageName: unknown
   linkType: soft
 
@@ -306,6 +336,16 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-use-wizard@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "react-use-wizard@npm:2.2.1"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 0d6a5c58b5b4f1e7447cf8d3146e896cb7b2872da7f9c27ed2dd3a204d9563b7950aad7928f791d8c9709c7f729245220099335937fcb64fe4ed5aa751a19400
   languageName: node
   linkType: hard
 
