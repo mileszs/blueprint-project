@@ -13,7 +13,7 @@ export function AppProvider({ children }) {
   }
   const [state, setState] = useState(initialState);
   useEffect(() => {
-    fetch("http://localhost:3000/api/assessments/1")
+    fetch(`https://mileszs-blueprint-project.herokuapp.com/api/assessments/1`)
       .then(response => response.json())
       .then((data) => {
         const {section, ...rest} = state;
