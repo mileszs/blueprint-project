@@ -34,7 +34,8 @@ const AssessmentSection = () => {
     setState({ ...state, questionNum: questionNum - 1 });
   };
 
-  if (questionNum > totalQuestions) {
+  if (totalQuestions <= 0) { return <p>Loading...</p>; }
+  if (totalQuestions >= 1 && questionNum > totalQuestions) {
     return <CompletedAssessment section={section} />;
   }
 

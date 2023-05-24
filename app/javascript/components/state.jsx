@@ -13,10 +13,12 @@ export function AppProvider({ children }) {
   }
   const [state, setState] = useState(initialState);
   useEffect(() => {
-    fetch("http://localhost:3000/api/assessment/1").then((response) => {
-      console.log("response", response);
-      setState({ section: data.content.sections[0], answers: [] });
-    });
+    fetch("http://localhost:3000/api/assessments/1")
+      .then(response => response.json())
+      .then((data) => {
+        const {section, ...rest} = state;
+        setState({section: data, ...rest});
+      });
   }, []);
   return (
     <AppStateContext.Provider value={[state, setState]}>
