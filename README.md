@@ -76,5 +76,5 @@ Per the exercises description, a couple links:
 
 I would not necessarily say I am proud of the code in this library specifically, but I am proud of how many people have found it useful. It is a Ruby on Rails library that makes it easy to generate a PDF from an HTML-based view.
 
-[LinkedIn](https://www.linkedin.com/in/mileszs/)
-[mileszs.com](http://mileszs.com)
+- [LinkedIn](https://www.linkedin.com/in/mileszs/)
+- [mileszs.com](http://mileszs.com)
