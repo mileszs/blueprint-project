@@ -1,11 +1,7 @@
 class AssessmentAPI {
-  // Hardcoding here is gross, but I did not want to spend time with an esbuild config
-  // to get env variables working here. So I'm cheating a bit, for now. I will make
-  // improvements to this in the future.
-  // static baseUrl = "http://localhost:3000/api"
-  static baseUrl = "https://mileszs-blueprint-project.herokuapp.com/api"
   static postAssessment(answers) {
-    const url = `${AssessmentAPI.baseUrl}/assessments`;
+    const baseUrl = document.querySelector("meta[name='baseAPIURL']").getAttribute("content");
+    const url = `${baseUrl}/api/assessments`;
     const csrf = document.querySelector("meta[name='csrf-token']").getAttribute("content");
     const headers = {
       'Accept': 'application/json',
@@ -18,7 +14,8 @@ class AssessmentAPI {
   }
 
   static getTemplate() {
-    const url = `${AssessmentAPI.baseUrl}/templates/1`;
+    const baseUrl = document.querySelector("meta[name='baseAPIURL']").getAttribute("content");
+    const url = `${baseUrl}/api/templates/1`;
     return fetch(url);
   }
 }
