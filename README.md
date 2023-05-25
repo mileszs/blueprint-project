@@ -10,7 +10,7 @@ The solution I have provided here is a React.js front-end within a Ruby on Rails
 
 ## Tech choices
 
-I would've loved to match tech with Blueprint and choose Node, React, all in TypeScript. However, that would've unnecessarily delayed completion of the project. I would have needed to quickly re-learn Node.js and/or a given framework's conventions, and learn TypeScript for the first time. I have no doubt I can learn those things quickly, but felt the delay wasn't worth the payoff in this case. I hope you will trust my ability and willingness to be constantly learning!
+I would've loved to match tech with Blueprint and choose Node, React, all in TypeScript. However, that would've unnecessarily delayed completion of the project. I would have needed to quickly re-learn Node.js and/or a given framework's conventions, and learn TypeScript for the first time. I have no doubt I can learn those things quickly, but felt the delay wasn't worth the payoff in this case.
 
 My previous employer's tech stack did not include React, so there was a little cognitive overhead of re-learning it. When I last used React, we were still working to convert our codebase to take full advantage of hooks. It was enjoyable to get to dive back into React, which I continue to prefer over other frameworks I've used. (Vue.js, for instance, which has a few aspects that trigger specific ancient PHP memories for me—ha!)
 
@@ -61,8 +61,6 @@ There are some other more generally DevOps things I would want to do around auto
 Aside from the tradeoffs I already mentioned, I think `AssessmentSection.jsx` could use some refactoring. It's doing too much, I think. I believe my rustiness with React has likely lead to me writing some of my components in either an old-school way or in a way that shows I've written more Ruby over the past two years than I have React. I would want to work with a teammate who is well-versed in the latest React conventions to make sure my style is inline with best practices. 
 
 I would want to convert it to TypeScript. Of course. :-)
-
-I would like to ensure I can get environment variables during the JS build process for use especially to determine the `baseUrl` based on environment. Hard-coding the URL makes me gag.
 
 On the back-end, nothing is being saved to the database at the moment. Not a requirement, but is strange.
 
