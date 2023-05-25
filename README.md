@@ -68,21 +68,6 @@ On the back-end, nothing is being saved to the database at the moment. Not a req
 
 I'm not very happy with `app/models/assessment.rb`. It does its job, but the methods are messier than I would prefer. I think there's a good argument that each method represents a possible value object that could be extracted. (Some folks would _hate_ that, as it can initially feel much more complex than what you see today, May 24th, 2023. Ultimately, it can be very easy to read and very easy to change. I would lean toward a heavy refactoring that direction.)
 
-Links
-There are some other more generally DevOps things I would want to do around automating CI/D, too, of course.
-
-#### Code
-
-Aside from the tradeoffs I already mentioned, I think `AssessmentSection.jsx` could use some refactoring. It's doing too much, I think. I believe my rustiness with React has likely lead to me writing some of my components in either an old-school way or in a way that shows I've written more Ruby over the past two years than I have React. I would want to work with a teammate who is well-versed in the latest React conventions to make sure my style is inline with best practices. 
-
-I would want to convert it to TypeScript. Of course. :-)
-
-I would like to ensure I can get environment variables during the JS build process for use especially to determine the `baseUrl` based on environment. Hard-coding the URL makes me gag.
-
-On the back-end, nothing is being saved to the database at the moment. Not a requirement, but is strange.
-
-I'm not very happy with `app/models/assessment.rb`. It does its job, but the methods are messier than I would prefer. I think there's a good argument that each method represents a possible value object that could be extracted. (Some folks would _hate_ that, as it can initially feel much more complex than what you see today, May 24th, 2023. Ultimately, it can be very easy to read and very easy to change. I would lean toward a heavy refactoring that direction.)
-
 ## Links
 
 Per the exercises description, a couple links:
