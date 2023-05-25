@@ -51,7 +51,8 @@ const AssessmentSection = () => {
 
   return (
     <section>
-      <h1>{section.title}</h1>
+      <h1>BDS</h1>
+      <h2>{section.title}</h2>
       <p>
         Question {questionNum} of {totalQuestions}:
       </p>
