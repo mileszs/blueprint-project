@@ -32,6 +32,8 @@ The primary bit of functionality I wanted to demonstrate was the "Previous" func
 
 The result is that answers are classic radio button groups. For what it's worth, it is also worth considering accessibility of buttons for radio buttons for this specific purpose. I am no accessibility expert—far from it. Nor am I a UX expert generally speaking. However, there are a lot of shenanigans folks do with using HTML elements unconventionally, or hiding elements in favor of others, etc, that can give screen readers, for instance, a really hard time. 
 
+<img width="1157" alt="screenshot showing validation" src="https://github.com/mileszs/blueprint-project/assets/2425/13e80db0-bba5-4b46-ab9e-d7245927e3b7">
+
 ### No Progress Bar
 
 I did not build a progress bar. No CSS in the first place as a deliberate tradeoff is part of why. However, I still could've built an ASCII art style progress bar. This is one I simply left out as ultimately I don't think you'll learn much about my ability as an engineer by my ability to build a pleasing progress bar. 
@@ -66,21 +68,6 @@ On the back-end, nothing is being saved to the database at the moment. Not a req
 
 I'm not very happy with `app/models/assessment.rb`. It does its job, but the methods are messier than I would prefer. I think there's a good argument that each method represents a possible value object that could be extracted. (Some folks would _hate_ that, as it can initially feel much more complex than what you see today, May 24th, 2023. Ultimately, it can be very easy to read and very easy to change. I would lean toward a heavy refactoring that direction.)
 
-Links
-There are some other more generally DevOps things I would want to do around automating CI/D, too, of course.
-
-#### Code
-
-Aside from the tradeoffs I already mentioned, I think `AssessmentSection.jsx` could use some refactoring. It's doing too much, I think. I believe my rustiness with React has likely lead to me writing some of my components in either an old-school way or in a way that shows I've written more Ruby over the past two years than I have React. I would want to work with a teammate who is well-versed in the latest React conventions to make sure my style is inline with best practices. 
-
-I would want to convert it to TypeScript. Of course. :-)
-
-I would like to ensure I can get environment variables during the JS build process for use especially to determine the `baseUrl` based on environment. Hard-coding the URL makes me gag.
-
-On the back-end, nothing is being saved to the database at the moment. Not a requirement, but is strange.
-
-I'm not very happy with `app/models/assessment.rb`. It does its job, but the methods are messier than I would prefer. I think there's a good argument that each method represents a possible value object that could be extracted. (Some folks would _hate_ that, as it can initially feel much more complex than what you see today, May 24th, 2023. Ultimately, it can be very easy to read and very easy to change. I would lean toward a heavy refactoring that direction.)
-
 ## Links
 
 Per the exercises description, a couple links:
@@ -89,5 +76,5 @@ Per the exercises description, a couple links:
 
 I would not necessarily say I am proud of the code in this library specifically, but I am proud of how many people have found it useful. It is a Ruby on Rails library that makes it easy to generate a PDF from an HTML-based view.
 
-[LinkedIn](https://www.linkedin.com/in/mileszs/)
-[mileszs.com](http://mileszs.com)
+- [LinkedIn](https://www.linkedin.com/in/mileszs/)
+- [mileszs.com](http://mileszs.com)
