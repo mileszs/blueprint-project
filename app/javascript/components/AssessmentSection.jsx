@@ -31,10 +31,11 @@ const AssessmentSection = () => {
     }
     
     if (questionNum == totalQuestions) {
-      console.log("OH YEAH LET'S SEND IT Y'ALL", answers)
       AssessmentAPI.postAssessment({ answers })
         .then(response => response.json())
-        .then(data => console.log("Recommendations", data));
+        .then(data => {
+          console.log("Recommendations", data)
+        });
     }
   };
 
