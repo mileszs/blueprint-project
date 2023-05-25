@@ -1,6 +1,7 @@
 class Api::AssessmentsController < ApplicationController
   def create
-    @assessment = Assessment.new(params)
-    render json: @assessment.recommendations.to_json
+    Rails.logger.info(params[:answers])
+    @assessment = Assessment.new(params[:answers])
+    render json: { recommendations: @assessment.level_2_recommendations }.to_json
   end
 end

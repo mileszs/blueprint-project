@@ -4,6 +4,7 @@ import { useAppState } from "./state";
 import Question from "./Question";
 import CompletedAssessment from "./CompletedAssessment";
 import data from "./data";
+import AssessmentAPI from "../AssessmentAPI";
 
 const AssessmentSection = () => {
   const {
@@ -20,12 +21,20 @@ const AssessmentSection = () => {
   const buttonLabel = state.questionNum == totalQuestions ? "Submit" : "Next";
 
   const saveAnswer = (data = {}) => {
+    let { answers, ...rest } = state;
+
     if (questionNum <= totalQuestions) {
-      let { answers, ...rest } = state;
       answers = Object.entries(data).map(((entry) => {
         return { question_id: entry[0], value: entry[1] };
       }));
       setState({ ...rest, answers, questionNum: questionNum + 1 });
+    }
+    
+    if (questionNum == totalQuestions) {
+      console.log("OH YEAH LET'S SEND IT Y'ALL", answers)
+      AssessmentAPI.postAssessment({ answers })
+        .then(response => response.json())
+        .then(data => console.log("Recommendations", data));
     }
   };
 
@@ -53,7 +62,7 @@ const AssessmentSection = () => {
           register={register}
           errors={errors}
         />
-        <button onClick={prevAnswer}>Previous</button>
+        <button onClick={prevAnswer} type="button">Previous</button>
         <button onClick={handleSubmit(saveAnswer)}>Next</button>
       </form>
     </section>

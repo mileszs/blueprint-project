@@ -1,6 +1,7 @@
 import * as React from 'react';
 const { createContext, useContext, useState, useEffect } = React;
 
+import AssessmentAPI from "../AssessmentAPI";
 import data from "./data";
 
 export const AppStateContext = createContext({});
@@ -13,7 +14,7 @@ export function AppProvider({ children }) {
   }
   const [state, setState] = useState(initialState);
   useEffect(() => {
-    fetch(`https://mileszs-blueprint-project.herokuapp.com/api/assessments/1`)
+      AssessmentAPI.getTemplate()
       .then(response => response.json())
       .then((data) => {
         const {section, ...rest} = state;
