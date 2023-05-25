@@ -2,11 +2,26 @@
 
 _May 2023_
 
-[Hosted on Heroku](https://mileszs-blueprint-project.herokuapp.com)
-
 The goal of this project—as described in detail [here](https://github.com/blueprinthq/coding-exercise)—is to provide patients with a general screening assessment that will provide enough information to determine automatically what subsequent assessments should be given. 
 
 The solution I have provided here is a React.js front-end within a Ruby on Rails app that makes requests to the Rails back-end API (particularly to get the up front information about this general assessment, and eventually to submit the answers for scoring to determine the recommendation for future assessments). There are some departures from the given instructions that I will discuss below, as well.
+
+## Exercising the App
+
+View it on Heroku](https://mileszs-blueprint-project.herokuapp.com)
+
+### Local Setup
+
+The easiest path forward is to poke at it on Heroku. However, if you do wish to set it up locally, you'll need **Ruby**, **Node**, **Yarn**, and **PostgreSQL** (even though I am not actively using it).
+
+```
+git clone git@github.com:mileszs/blueprint-project.git
+cd blueprint-project
+bin/setup
+bin/dev
+```
+
+At that point, you should be able to visit `localhost:3000`.
 
 ## Tech choices
 
