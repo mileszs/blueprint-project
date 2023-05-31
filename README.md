@@ -8,7 +8,7 @@ The solution I have provided here is a React.js front-end within a Ruby on Rails
 
 ## Exercising the App
 
-View it on Heroku](https://mileszs-blueprint-project.herokuapp.com)
+[View it on Heroku](https://mileszs-blueprint-project.herokuapp.com)
 
 ### Local Setup
 
