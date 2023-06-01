@@ -2,7 +2,7 @@
 
 _May 2023_
 
-The goal of this project—as described in detail [here](https://github.com/blueprinthq/coding-exercise)—is to provide patients with a general screening assessment that will provide enough information to determine automatically what subsequent assessments should be given. 
+The goal of this project—as described in detail [here](https://github.com/blueprinthq/coding-exercise/tree/7b57fa0162e7a51373d9e9800d40665176ad429b) or copied as of May 2023 [here](original_blueprint_project_readme.md)—is to provide patients with a general screening assessment that will provide enough information to determine automatically what subsequent assessments should be given. 
 
 The solution I have provided here is a React.js front-end within a Ruby on Rails app that makes requests to the Rails back-end API (particularly to get the up front information about this general assessment, and eventually to submit the answers for scoring to determine the recommendation for future assessments). There are some departures from the given instructions that I will discuss below, as well.
 
